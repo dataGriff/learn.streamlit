@@ -4,3 +4,4 @@ pandas
 numpy
 streamlit-pydantic
 streamlit-pydantic-form
+pydantic
