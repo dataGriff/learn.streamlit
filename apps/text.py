@@ -15,4 +15,5 @@ st.divider()
 
 # cwd - current working directory
 # image has lots of properties like width etc
+# TODO: test
 st.image(os.path.join(os.getcwd(),"static","Staffie.jpg"))

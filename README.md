@@ -14,3 +14,5 @@ streamlit run main.py
 Can set to auto refresh on save
 
 ![alt text](images/image.png)
+
+Seems as though streamlit vs code only work in browser but not on my remote vs code 🤷

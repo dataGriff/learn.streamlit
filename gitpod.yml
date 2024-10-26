@@ -1,0 +1,13 @@
+tasks:
+  - name: Pip Install 
+    command: pip install -r requirements.txt 
+
+vscode:
+  extensions:
+    - dracula-theme.theme-dracula
+    - ms-python.python
+    - usernamehw.errorlens
+    - wayou.vscode-todo-highlight
+    - whitphx.vscode-stlite
+    - yzhang.markdown-all-in-one
+    - gruntfuggly.todo-tree

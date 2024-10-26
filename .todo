@@ -1,0 +1,44 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1729926257314,
+        "children": [
+          {
+            "key": 1729926429018,
+            "children": [],
+            "todo": {
+              "content": "",
+              "id": 1729926429018,
+              "level": "default",
+              "done": false,
+              "start": 1729926429018
+            }
+          }
+        ],
+        "todo": {
+          "content": "stuff",
+          "id": 1729926257314,
+          "level": "default",
+          "done": false,
+          "start": 1729926257314
+        }
+      }
+    ],
+    "expandKeys": [
+      1729926257314
+    ],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "timelines": [],
+    "showLine": false,
+    "playFontSize": 24,
+    "title": ".todo",
+    "autoSort": false,
+    "showEndTime": false,
+    "simpleMode": false,
+    "lang": "en",
+    "version": "1729926429130"
+  }
+}
