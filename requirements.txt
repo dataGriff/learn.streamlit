@@ -2,3 +2,5 @@ streamlit
 matplotlib
 pandas
 numpy
+streamlit-pydantic
+streamlit-pydantic-form
