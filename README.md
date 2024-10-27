@@ -7,6 +7,7 @@
 
 - Using these mean only these components will rerun!
 - Big efficiency boost!
+- Share state between fragments using session state
 
 ```py
 

@@ -2,6 +2,8 @@ import streamlit as st
 
 st.title("My Awesome App")
 
+# if you want to share data between fragments use session_state
+
 # fragments will run independently
 # don't require rerun of entire app!
 @st.fragment()
