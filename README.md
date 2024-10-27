@@ -1,7 +1,15 @@
 # Streamlit
 
+- [Streamlit](#streamlit)
+  - [Links](#links)
+  - [Fragments](#fragments)
+  - [Fast API Open API Gen](#fast-api-open-api-gen)
+
+## Links
+
 - [Course](https://www.youtube.com/watch?v=o8p7uQCGD0U)
 - [AI Developer](https://offers.hubspot.com/techwithtim-developer-checklist?utm_source=youtube&utm_medium=social&utm_campaign=CR00455Oct2024_TechWithTim%2Fpartner_youtube)
+- [See Multi Page Apps Details](https://docs.streamlit.io/develop/concepts/multipage-apps/overview))
 
 ## Fragments
 
