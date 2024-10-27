@@ -1,0 +1,186 @@
+openapi: 3.0.0
+info:
+  title: Creature Management API
+  version: 1.0.0
+  description: A simple API to manage creatures.
+
+servers:
+  - url: http://localhost:3000/api
+
+paths:
+  /creatures:
+    get:
+      summary: Get a list of all creatures
+      responses:
+        '200':
+          description: A list of creatures
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Creature'
+              examples:
+                example1:
+                  summary: A list of sample creatures
+                  value:
+                    - id: "1"
+                      name: "Fenrir"
+                      type: "Wolf"
+                      age: 120
+                    - id: "2"
+                      name: "Draco"
+                      type: "Dragon"
+                      age: 300
+
+    post:
+      summary: Create a new creature
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Creature'
+            example:
+              name: "Phoenix"
+              type: "Bird"
+              age: 500
+      responses:
+        '201':
+          description: The created creature
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Creature'
+              example:
+                id: "3"
+                name: "Phoenix"
+                type: "Bird"
+                age: 500
+
+  /creatures/{id}:
+    get:
+      summary: Get a creature by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The requested creature
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Creature'
+              example:
+                id: "1"
+                name: "Fenrir"
+                type: "Wolf"
+                age: 120
+        '404':
+          description: Creature not found
+          content:
+            application/json:
+              examples:
+                errorResponse:
+                  summary: Creature not found example
+                  value:
+                    message: "Creature with ID '4' not found."
+
+    put:
+      summary: Update an existing creature
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Creature'
+            example:
+              name: "Fenrir the Great"
+              type: "Wolf"
+              age: 125
+      responses:
+        '200':
+          description: The updated creature
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Creature'
+              example:
+                id: "1"
+                name: "Fenrir the Great"
+                type: "Wolf"
+                age: 125
+        '404':
+          description: Creature not found
+          content:
+            application/json:
+              examples:
+                errorResponse:
+                  summary: Creature not found example
+                  value:
+                    message: "Creature with ID '5' not found."
+
+    delete:
+      summary: Delete a creature
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Creature deleted successfully
+        '404':
+          description: Creature not found
+          content:
+            application/json:
+              examples:
+                errorResponse:
+                  summary: Creature not found example
+                  value:
+                    message: "Creature with ID '6' not found."
+
+components:
+  schemas:
+    Creature:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The unique identifier for the creature
+          example: "1"
+        name:
+          type: string
+          description: The name of the creature
+          example: "Fenrir"
+          minLength: 1
+          maxLength: 20
+        type:
+          type: string
+          description: The type or category of the creature
+          example: "Wolf"
+          enum:
+            - Werewolf
+            - Dragon
+            - Vampire
+            - Demon
+            - Other
+        age:
+          type: integer
+          description: The age of the creature
+          example: 120
+          minimum: 0
+          maximum: 1000
+      required:
+        - name
+        - type

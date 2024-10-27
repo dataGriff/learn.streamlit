@@ -31,3 +31,13 @@ Can set to auto refresh on save
 ![alt text](images/image.png)
 
 Seems as though streamlit vs code only work in browser but not on my remote vs code 🤷
+
+## Fast API Open API Gen
+
+- [Fast API Code Gen](https://pypi.org/project/fastapi-code-generator/)
+- [Medium Fast API Server Gen Open API](https://medium.com/@georgedimitropulos/generate-python-fastapi-server-from-openapi-file-099bfa944d3b)
+```
+
+```bash
+fastapi-codegen --input ./openapi/creatures.oas.0.0.yaml --output openapi/app
+```

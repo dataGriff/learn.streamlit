@@ -5,3 +5,6 @@ numpy
 streamlit-pydantic
 streamlit-pydantic-form
 pydantic
+fastapi
+fastapi-code-generator
+uvicorn
