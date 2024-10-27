@@ -3,6 +3,13 @@
 - [Course](https://www.youtube.com/watch?v=o8p7uQCGD0U)
 - [AI Developer](https://offers.hubspot.com/techwithtim-developer-checklist?utm_source=youtube&utm_medium=social&utm_campaign=CR00455Oct2024_TechWithTim%2Fpartner_youtube)
 
+## Fragments
+
+- Using these mean only these components will rerun!
+- Big efficiency boost!
+
+```py
+
 ## Open API Form Gen??
 
 - [Streamlit Blog](https://blog.streamlit.io/build-a-streamlit-form-generator-app-to-avoid-writing-code-by-hand/)
