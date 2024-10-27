@@ -48,7 +48,7 @@ st.write("Hover over this button for a tooltip")
 st.button("Button with Tooltip", help="This is a tooltip")
 
 if sidebar_input:
-    st.write(f"You entered: {sidebar_input}")
+    st.write(f"You entered in the sidebar: {sidebar_input}")
 
 
 
